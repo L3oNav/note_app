@@ -1,0 +1,62 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "yarn type-check"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 85,
+    "tabWidth": 2,
+    "useTabs": false,
+    "trailingComma": "es5",
+    "endOfLine": "auto",
+    "arrowParens": "always"
+  },
+  "dependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.12.13",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "bootstrap": "^4.6.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-webpack-plugin": "^2.5.2",
+    "file-loader": "^6.2.0",
+    "formik": "^2.2.6",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^5.2.0",
+    "node-sass": "^5.0.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "^17.0.2",
+    "react-hot-loader": "^4.13.0",
+    "react-router-dom": "^5.2.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.27.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "yup": "^0.32.9"
+  }
+}
